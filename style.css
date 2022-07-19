@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/placeholder-image-person-jpg.jpg);
+    
+}
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex ;
+    list-style: none;
+    margin: 20px 0px ;
+
+}
+.navbar ul li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color:turquoise;
+    color: black;
+    box-shadow: 0 0 10;
+}
+
+/*home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+}
+#home ::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: black;
+}
